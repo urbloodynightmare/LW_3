@@ -6,17 +6,30 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            double a = 0;
+            double b = 0;
+
             while (true)
             {
                 Console.WriteLine("Ввести A");
+                string a = Console.ReadLine();
                 Console.WriteLine("Ввести B");
-                Console.WriteLine("Выполнить '+'");
-                Console.WriteLine("Выполнить '-'");
-                Console.WriteLine("Выполнить '*'");
-                Console.WriteLine("Выполнить '/'");
+                string b = Console.ReadLine();
+
+                Console.WriteLine("1. Выполнить '+'");
+                Console.WriteLine("2. Выполнить '-'");
+                Console.WriteLine("3. Выполнить '*'");
+                Console.WriteLine("4. Выполнить '/'");
                 Console.Write("Выберите пункт: ");
                 
                 string choice = Console.ReadLine();
+
+                switch(choice)
+                {
+                    case "1":
+                        Console.WriteLine($"Результат A + B = {a + b}")
+                        break;
+                }
             }
         }
     }
