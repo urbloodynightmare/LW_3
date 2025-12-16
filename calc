@@ -1,0 +1,23 @@
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("Ввести A");
+                Console.WriteLine("Ввести B");
+                Console.WriteLine("Выполнить '+'");
+                Console.WriteLine("Выполнить '-'");
+                Console.WriteLine("Выполнить '*'");
+                Console.WriteLine("Выполнить '/'");
+                Console.Write("Выберите пункт: ");
+                
+                string choice = Console.ReadLine();
+            }
+        }
+    }
+}
