@@ -23,6 +23,13 @@ namespace Calculator
                 Console.Write("Выберите пункт: ");
                 
                 string choice = Console.ReadLine();
+
+                switch(choice)
+                {
+                    case "1":
+                        Console.WriteLine($"Результат A + B = {a + b}")
+                        break;
+                }
             }
         }
     }
